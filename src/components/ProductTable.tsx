@@ -77,9 +77,7 @@ export const ProductTable = ({
             products.map((product, idx) => (
               <TableRow
                 key={product.id}
-                className={`transition-colors ${
-                  idx % 2 === 0 ? "bg-white" : "bg-muted/20"
-                } hover:bg-muted/40`}
+                className="hover:bg-muted/30 border-b last:border-0"
               >
                 <TableCell className="font-medium">
                   {product.title}
